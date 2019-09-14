@@ -1,0 +1,12 @@
+{
+    "name": "p7v/mrk",
+    "description": "Document with meta parser for PHP",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Plekhanov",
+            "email": "alex@p7v.app"
+        }
+    ]
+}
