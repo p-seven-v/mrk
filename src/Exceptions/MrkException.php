@@ -6,6 +6,6 @@ namespace P7v\Mrk\Exceptions;
 
 use RuntimeException;
 
-class FileNotFound extends RuntimeException
+abstract class MrkException extends RuntimeException
 {
 }

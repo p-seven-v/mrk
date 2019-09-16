@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Tests\Unit\Entities;
 
 use P7v\Mrk\Entities\Input;
-use P7v\Mrk\Exceptions\FileNotFound;
+use P7v\Mrk\Exceptions\FileNotFoundException;
 use PHPUnit\Framework\TestCase;
 
 class InputTest extends TestCase
@@ -34,7 +34,7 @@ class InputTest extends TestCase
 
         $path = __DIR__ . '/../../notestfile.md';
 
-        $this->expectException(FileNotFound::class);
+        $this->expectException(FileNotFoundException::class);
         $this->expectExceptionMessage($path);
 
         $this->assertEquals($expectedInput, Input::fromFile($path));
