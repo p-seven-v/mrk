@@ -31,4 +31,9 @@ class Input
 
         return self::fromString(file_get_contents($realpath));
     }
+
+    public function __toString(): string
+    {
+        return $this->content;
+    }
 }
