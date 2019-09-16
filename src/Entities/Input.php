@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace P7v\Mrk\Entities;
 
-use P7v\Mrk\Exceptions\FileNotFound;
+use P7v\Mrk\Exceptions\FileNotFoundException;
 
 class Input
 {
@@ -26,7 +26,7 @@ class Input
         $realpath = realpath($path);
 
         if ($realpath === false) {
-            throw new FileNotFound($path);
+            throw new FileNotFoundException($path);
         }
 
         return self::fromString(file_get_contents($realpath));
