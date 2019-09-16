@@ -34,7 +34,6 @@ class Parser
             $this->parseMetadata($meta),
             $this->parseContent($content)
         );
-
     }
 
     private function split(string $input): array
