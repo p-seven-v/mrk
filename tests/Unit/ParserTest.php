@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Unit;
+namespace P7v\Mrk\Tests\Unit;
 
 use P7v\Mrk\Entities\Document;
 use P7v\Mrk\Entities\Input;
