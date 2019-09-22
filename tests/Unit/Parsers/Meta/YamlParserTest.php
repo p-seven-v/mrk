@@ -4,24 +4,23 @@ declare(strict_types=1);
 
 namespace P7v\Mrk\Tests\Unit\Parsers\Meta;
 
-use P7v\Mrk\Parsers\Meta\IniParser;
+use P7v\Mrk\Parsers\Meta\YamlParser;
 use PHPUnit\Framework\TestCase;
 
-class IniParserTest extends TestCase
+class YamlParserTest extends TestCase
 {
-    /** @var IniParser */
+    /** @var YamlParser */
     private $subject;
 
     protected function setUp(): void
     {
-        $this->subject = new IniParser();
+        $this->subject = new YamlParser();
     }
 
     /**
      * @test
      * @param string $meta
      * @param array $expected
-     *
      * @dataProvider dataProvider
      */
     public function it_can_parse(string $meta, array $expected)
@@ -32,18 +31,9 @@ class IniParserTest extends TestCase
     public function dataProvider(): array
     {
         return [
-            '2 values' => [
-                "key=value\notherKey=otherValue\n",
-                ['key' => 'value', 'otherKey' => 'otherValue'],
-            ],
-            '1 value' => [
-                "key=value",
-                ['key' => 'value'],
-            ],
-            'no values' => [
-                '',
-                []
-            ]
+            ['foo: bar', ['foo' => 'bar']],
+            ['foo:  bar', ['foo' => 'bar']],
+            ["foo: bar\nxyz: por", ['foo' => 'bar', 'xyz' => 'por']],
         ];
     }
 }

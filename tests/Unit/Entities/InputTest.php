@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Unit\Entities;
+namespace P7v\Mrk\Tests\Unit\Entities;
 
 use P7v\Mrk\Entities\Input;
 use P7v\Mrk\Exceptions\FileNotFoundException;
