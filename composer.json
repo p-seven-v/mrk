@@ -19,6 +19,7 @@
     },
     "suggest": {
         "erusev/parsedown": "Required for Parsedown markdown parsing",
+        "ext-json": "Required for json metadata parsing",
         "symfony/yaml": "Required for Yaml metadata parsing"
     },
     "autoload": {
