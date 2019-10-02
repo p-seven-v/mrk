@@ -14,10 +14,12 @@
     },
     "require-dev": {
         "erusev/parsedown": "^1.7",
+        "league/commonmark": "^1.0",
         "phpunit/phpunit": "^7.5.16",
         "symfony/yaml": "^4.3"
     },
     "suggest": {
+        "league/commonmark": "Required for Commonmark markdown parsing",
         "erusev/parsedown": "Required for Parsedown markdown parsing",
         "symfony/yaml": "Required for Yaml metadata parsing"
     },
