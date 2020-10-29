@@ -58,6 +58,6 @@ class ParserTest extends TestCase
                 '<h4>What is "Let\'s Encrypt"?</h4>'
             ),
             $this->subject->parse(Input::fromString($text))
-    );
+        );
     }
 }
