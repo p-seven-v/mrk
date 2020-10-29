@@ -19,6 +19,7 @@
         "symfony/yaml": "^4.3"
     },
     "suggest": {
+        "ext-json": "Required for json metadata parsing",
         "league/commonmark": "Required for Commonmark markdown parsing",
         "erusev/parsedown": "Required for Parsedown markdown parsing",
         "symfony/yaml": "Required for Yaml metadata parsing"
