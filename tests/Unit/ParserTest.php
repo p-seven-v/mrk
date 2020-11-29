@@ -12,6 +12,9 @@ use P7v\Mrk\Parsers\Meta\MetaParser;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \P7v\Mrk\Parser
+ */
 class ParserTest extends TestCase
 {
     /** @var ContentParser|MockObject */

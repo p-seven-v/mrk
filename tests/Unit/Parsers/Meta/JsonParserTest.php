@@ -7,6 +7,9 @@ namespace P7v\Mrk\Tests\Unit\Parsers\Meta;
 use P7v\Mrk\Parsers\Meta\JsonParser;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \P7v\Mrk\Parsers\Meta\JsonParser
+ */
 class JsonParserTest extends TestCase
 {
     /** @var JsonParser */

@@ -8,6 +8,9 @@ use League\CommonMark\CommonMarkConverter;
 use P7v\Mrk\Parsers\Content\CommonmarkParser;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \P7v\Mrk\Parsers\Content\CommonmarkParser
+ */
 class CommonmarkParserTest extends TestCase
 {
     /** @var CommonmarkParser */

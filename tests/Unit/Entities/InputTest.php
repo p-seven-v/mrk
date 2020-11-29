@@ -8,6 +8,9 @@ use P7v\Mrk\Entities\Input;
 use P7v\Mrk\Exceptions\FileNotFoundException;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \P7v\Mrk\Entities\Input
+ */
 class InputTest extends TestCase
 {
     /** @test */

@@ -7,6 +7,9 @@ namespace P7v\Mrk\Tests\Unit\Parsers\Content;
 use P7v\Mrk\Parsers\Content\PlainTextParser;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \P7v\Mrk\Parsers\Content\PlainTextParser
+ */
 class PlainTextParserTest extends TestCase
 {
     /** @test */

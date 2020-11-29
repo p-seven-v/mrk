@@ -7,6 +7,9 @@ namespace P7v\Mrk\Tests\Unit\Parsers\Meta;
 use P7v\Mrk\Parsers\Meta\IniParser;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \P7v\Mrk\Parsers\Meta\IniParser
+ */
 class IniParserTest extends TestCase
 {
     /** @var IniParser */
