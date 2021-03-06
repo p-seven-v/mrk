@@ -15,7 +15,7 @@ class JsonParserTest extends TestCase
     /** @var JsonParser */
     private $subject;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->subject = new JsonParser();
     }

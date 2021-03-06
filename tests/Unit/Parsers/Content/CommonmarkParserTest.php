@@ -16,7 +16,7 @@ class CommonmarkParserTest extends TestCase
     /** @var CommonmarkParser */
     private $subject;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->subject = new CommonmarkParser(new CommonMarkConverter());
     }
