@@ -36,11 +36,17 @@ class Parser
         );
     }
 
+    /**
+     * @return array{string, string}
+     */
     private function split(string $input): array
     {
-        return preg_split(static::PATTERN, $input, 2);
+        return preg_split(self::PATTERN, $input, 2);
     }
 
+    /**
+     * @return array<mixed>
+     */
     private function parseMetadata(string $meta): array
     {
         return $this->metaParser->parse($meta);

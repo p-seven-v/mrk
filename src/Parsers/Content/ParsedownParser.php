@@ -18,6 +18,6 @@ class ParsedownParser implements ContentParser
 
     public function parse(string $content): string
     {
-        return $this->parsedown->text($content);
+        return (string)$this->parsedown->text($content);
     }
 }
