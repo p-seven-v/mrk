@@ -1,4 +1,4 @@
-name: Unit test coverage
+name: Psalm static analysis
 
 on:
   - push
@@ -7,7 +7,7 @@ on:
 jobs:
   tests:
     runs-on: ubuntu-latest
-    name: Unit test coverage
+    name: Psalm static analysis
 
     steps:
       - name: Checkout code
@@ -16,17 +16,12 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 7.4
+          php-version: 8.0
           tools: composer:v2
-          coverage: pcov
+          coverage: none
 
       - name: Install dependencies
         run: composer update --prefer-stable --prefer-dist --no-interaction --no-progress
 
-      - name: Execute tests
-        run: vendor/bin/phpunit --coverage-clover=clover.xml
-
-      - name: Send coverage report
-        uses: codecov/codecov-action@v1
-        with:
-          file: ./clover.xml
+      - name: Run psalm
+        run: vendor/bin/psalm

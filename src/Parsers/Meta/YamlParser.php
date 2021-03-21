@@ -10,6 +10,10 @@ class YamlParser implements MetaParser
 {
     public function parse(string $meta): array
     {
-        return Yaml::parse($meta);
+        $parsed = Yaml::parse($meta);
+
+        assert(is_array($parsed));
+
+        return $parsed;
     }
 }

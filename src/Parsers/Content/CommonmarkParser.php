@@ -11,9 +11,9 @@ class CommonmarkParser implements ContentParser
     /** @var CommonMarkConverter */
     private $commonmark;
 
-    public function __construct(CommonMarkConverter $commonmark)
+    public function __construct(CommonMarkConverter $commonmark = null)
     {
-        $this->commonmark = $commonmark;
+        $this->commonmark = $commonmark ?? new CommonMarkConverter();
     }
 
     public function parse(string $content): string

@@ -10,13 +10,14 @@
         }
     ],
     "require": {
-        "php": ">=7.2"
+        "php": ">=7.3"
     },
     "require-dev": {
         "erusev/parsedown": "^1.7",
         "league/commonmark": "^1.0",
         "phpunit/phpunit": "^8.5.14",
-        "symfony/yaml": "^4.3"
+        "symfony/yaml": "^5.2",
+        "vimeo/psalm": "^4.6"
     },
     "suggest": {
         "ext-json": "Required for json metadata parsing",
@@ -36,5 +37,8 @@
     },
     "config": {
         "sort-packages": true
+    },
+    "replace": {
+        "symfony/polyfill-php73": "*"
     }
 }
