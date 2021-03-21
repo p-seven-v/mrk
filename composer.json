@@ -10,8 +10,7 @@
         }
     ],
     "require": {
-        "php": ">=7.3",
-        "roave/you-are-using-it-wrong": "^1.4"
+        "php": ">=7.3"
     },
     "require-dev": {
         "erusev/parsedown": "^1.7",
