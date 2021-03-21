@@ -6,11 +6,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://github.com/p-seven-v/mrk/compare/1.1.0...master)
 
+## [1.2.0 - 2021-03-21](https://github.com/p-seven-v/mrk/compare/1.1.0...1.2.0)
+### Changed
+- Dropped PHP 7.2 support
+
 ## [1.1.0 - 2021-03-06](https://github.com/p-seven-v/mrk/compare/1.0.0...1.1.0)
+### Changed
 - Allowed PHP 8
 - Stopped supporting PHP 7.1
 
 ## [1.0.0 - 2020-11-30](https://github.com/p-seven-v/mrk/compare/0.2.0...1.0.0)
+### Added
 - Implemented Json parser for metadata
 
 ## [0.2.0 - 2020-01-07](https://github.com/p-seven-v/mrk/compare/0.1.1...0.2.0)
