@@ -6,14 +6,11 @@ namespace P7v\Mrk\Entities;
 
 class Document
 {
-    /** @var string */
-    private $raw;
+    private string $raw;
 
-    /** @var array */
-    private $meta;
+    private array $meta;
 
-    /** @var string */
-    private $content;
+    private string $content;
 
     public function __construct(string $raw, array $meta, string $content)
     {
