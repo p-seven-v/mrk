@@ -8,8 +8,7 @@ use League\CommonMark\CommonMarkConverter;
 
 class CommonmarkParser implements ContentParser
 {
-    /** @var CommonMarkConverter */
-    private $commonmark;
+    private CommonMarkConverter $commonmark;
 
     public function __construct(CommonMarkConverter $commonmark = null)
     {

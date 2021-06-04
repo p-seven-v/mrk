@@ -8,8 +8,7 @@ use P7v\Mrk\Exceptions\FileNotFoundException;
 
 class Input
 {
-    /** @var string */
-    private $content;
+    private string $content;
 
     public function __construct(string $content)
     {

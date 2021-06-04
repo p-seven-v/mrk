@@ -8,8 +8,7 @@ use Parsedown;
 
 class ParsedownParser implements ContentParser
 {
-    /** @var Parsedown */
-    private $parsedown;
+    private Parsedown $parsedown;
 
     public function __construct(Parsedown $parsedown)
     {

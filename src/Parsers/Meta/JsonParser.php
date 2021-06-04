@@ -9,8 +9,6 @@ use JsonException;
 class JsonParser implements MetaParser
 {
     /**
-     * @return array<mixed>
-     *
      * @throws JsonException
      */
     public function parse(string $meta): array

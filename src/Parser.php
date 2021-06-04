@@ -13,11 +13,9 @@ class Parser
 {
     private const PATTERN = '/\s+={3,}\s+/';
 
-    /** @var ContentParser */
-    private $contentParser;
+    private ContentParser $contentParser;
 
-    /** @var MetaParser */
-    private $metaParser;
+    private MetaParser $metaParser;
 
     public function __construct(ContentParser $contentParser, MetaParser $metaParser)
     {
