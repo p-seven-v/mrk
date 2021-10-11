@@ -12,8 +12,7 @@ use PHPUnit\Framework\TestCase;
  */
 class JsonParserTest extends TestCase
 {
-    /** @var JsonParser */
-    private $subject;
+    private JsonParser $subject;
 
     protected function setUp(): void
     {
@@ -31,14 +30,12 @@ class JsonParserTest extends TestCase
         $this->assertEquals($expected, $this->subject->parse($json));
     }
 
-    public function dataProvider(): array
+    public function dataProvider(): iterable
     {
-        return [
-            ['{}', []],
-            ['{"foo":"bar"}', ['foo' => 'bar']],
-            ['{"foo": "bar"}', ['foo' => 'bar']],
-            ['{"foo": "bar", "xyz": "pro"}', ['foo' => 'bar', 'xyz' => 'pro']],
-            ['{"foo": "bar", "xyz": "pro", "num": 365}', ['foo' => 'bar', 'xyz' => 'pro', 'num' => 365]],
-        ];
+        yield ['{}', []];
+        yield ['{"foo":"bar"}', ['foo' => 'bar']];
+        yield ['{"foo": "bar"}', ['foo' => 'bar']];
+        yield ['{"foo": "bar", "xyz": "pro"}', ['foo' => 'bar', 'xyz' => 'pro']];
+        yield ['{"foo": "bar", "xyz": "pro", "num": 365}', ['foo' => 'bar', 'xyz' => 'pro', 'num' => 365]];
     }
 }

@@ -13,11 +13,13 @@ use PHPUnit\Framework\TestCase;
 class PlainTextParserTest extends TestCase
 {
     /** @test */
-    public function it_can_parse()
+    public function it_can_parse(): void
     {
+        $sut = new PlainTextParser();
+
         $this->assertEquals(
             'Hello Plain text.',
-            (new PlainTextParser())->parse('Hello Plain text.')
+            $sut->parse('Hello Plain text.')
         );
     }
 }
