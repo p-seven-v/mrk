@@ -13,8 +13,7 @@ use PHPUnit\Framework\TestCase;
  */
 class CommonmarkParserTest extends TestCase
 {
-    /** @var CommonmarkParser */
-    private $subject;
+    private CommonmarkParser $subject;
 
     protected function setUp(): void
     {
@@ -22,7 +21,7 @@ class CommonmarkParserTest extends TestCase
     }
 
     /** @test */
-    public function it_can_parse()
+    public function it_can_parse(): void
     {
         $this->assertEquals(
             "<h1>Hello World</h1>\n",

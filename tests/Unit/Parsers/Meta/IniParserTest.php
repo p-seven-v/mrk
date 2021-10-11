@@ -12,8 +12,7 @@ use PHPUnit\Framework\TestCase;
  */
 class IniParserTest extends TestCase
 {
-    /** @var IniParser */
-    private $subject;
+    private IniParser $subject;
 
     protected function setUp(): void
     {
@@ -27,26 +26,26 @@ class IniParserTest extends TestCase
      *
      * @dataProvider dataProvider
      */
-    public function it_can_parse(string $meta, array $expected)
+    public function it_can_parse(string $meta, array $expected): void
     {
         $this->assertEquals($expected, $this->subject->parse($meta));
     }
 
-    public function dataProvider(): array
+    public function dataProvider(): iterable
     {
-        return [
-            '2 values' => [
-                "key=value\notherKey=otherValue\n",
-                ['key' => 'value', 'otherKey' => 'otherValue'],
-            ],
-            '1 value' => [
-                "key=value",
-                ['key' => 'value'],
-            ],
-            'no values' => [
-                '',
-                []
-            ]
+        yield '2 values' => [
+            "key=value\notherKey=otherValue\n",
+            ['key' => 'value', 'otherKey' => 'otherValue'],
+        ];
+
+        yield '1 value' => [
+            "key=value",
+            ['key' => 'value'],
+        ];
+
+        yield 'no values' => [
+            '',
+            [],
         ];
     }
 }

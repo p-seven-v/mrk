@@ -12,8 +12,7 @@ use PHPUnit\Framework\TestCase;
  */
 class YamlParserTest extends TestCase
 {
-    /** @var YamlParser */
-    private $subject;
+    private YamlParser $subject;
 
     protected function setUp(): void
     {
@@ -31,12 +30,10 @@ class YamlParserTest extends TestCase
         $this->assertEquals($expected, $this->subject->parse($meta));
     }
 
-    public function dataProvider(): array
+    public function dataProvider(): iterable
     {
-        return [
-            ['foo: bar', ['foo' => 'bar']],
-            ['foo:  bar', ['foo' => 'bar']],
-            ["foo: bar\nxyz: por", ['foo' => 'bar', 'xyz' => 'por']],
-        ];
+        yield ['foo: bar', ['foo' => 'bar']];
+        yield ['foo:  bar', ['foo' => 'bar']];
+        yield ["foo: bar\nxyz: por", ['foo' => 'bar', 'xyz' => 'por']];
     }
 }

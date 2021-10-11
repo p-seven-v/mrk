@@ -17,14 +17,13 @@ use PHPUnit\Framework\TestCase;
  */
 class ParserTest extends TestCase
 {
-    /** @var ContentParser|MockObject */
-    private $contentParser;
+    /** @var ContentParser&MockObject */
+    private ContentParser $contentParser;
 
-    /** @var MetaParser|MockObject */
-    private $metaParser;
+    /** @var MetaParser&MockObject */
+    private MetaParser $metaParser;
 
-    /** @var Parser */
-    private $subject;
+    private Parser $subject;
 
     protected function setUp(): void
     {
@@ -34,7 +33,7 @@ class ParserTest extends TestCase
     }
 
     /** @test */
-    public function it_properly_parses_document()
+    public function it_properly_parses_document(): void
     {
         $text = "key=value\nname=alex\n ===\n #### What is \"Let's Encrypt\"?";
 

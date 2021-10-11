@@ -14,7 +14,7 @@ use PHPUnit\Framework\TestCase;
 class InputTest extends TestCase
 {
     /** @test */
-    public function it_can_be_created_from_string()
+    public function it_can_be_created_from_string(): void
     {
         $expectedInput = new Input('text');
 
@@ -22,7 +22,7 @@ class InputTest extends TestCase
     }
 
     /** @test */
-    public function it_can_be_created_from_file()
+    public function it_can_be_created_from_file(): void
     {
         $expectedInput = new Input("text\n");
 
@@ -31,7 +31,7 @@ class InputTest extends TestCase
     }
 
     /** @test */
-    public function it_throws_an_exception_if_file_does_not_exist()
+    public function it_throws_an_exception_if_file_does_not_exist(): void
     {
         $expectedInput = new Input("text\n");
 
