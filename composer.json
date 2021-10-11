@@ -37,8 +37,5 @@
     },
     "config": {
         "sort-packages": true
-    },
-    "replace": {
-        "symfony/polyfill-php73": "*"
     }
 }
