@@ -13,7 +13,7 @@
         "php": ">=7.4"
     },
     "require-dev": {
-        "erusev/parsedown": "^1.7",
+        "erusev/parsedown": "^1.7.2",
         "league/commonmark": "^1.0",
         "phpunit/phpunit": "^9.5",
         "symfony/yaml": "^5.2",
