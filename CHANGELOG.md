@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://github.com/p-seven-v/mrk/compare/1.3.0...master)
 
+## [1.3.1 - 2024-12-10]
+### Changed
+- Increased required versions of libraries due to security issues in older versions
+
 ## [1.3.0 - 2021-06-04](https://github.com/p-seven-v/mrk/compare/1.2.0...1.3.0)
 ### Changed
 - Dropped PHP 7.3 support
