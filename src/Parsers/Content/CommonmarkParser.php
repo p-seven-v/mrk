@@ -17,6 +17,6 @@ class CommonmarkParser implements ContentParser
 
     public function parse(string $content): string
     {
-        return $this->commonmark->convertToHtml($content);
+        return $this->commonmark->convert($content)->getContent();
     }
 }
