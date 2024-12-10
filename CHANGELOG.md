@@ -6,38 +6,60 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://github.com/p-seven-v/mrk/compare/1.3.0...master)
 
-## [1.3.1 - 2024-12-10](https://github.com/p-seven-v/mrk/compare/1.3.0...1.3.1)
+## [1.3.2 - 2024-12-10](https://github.com/p-seven-v/mrk/compare/1.3.1...1.3.2)
+
 ### Changed
+
 - Increased required versions of libraries due to security issues in older versions
 
-## [1.3.0 - 2021-06-04](https://github.com/p-seven-v/mrk/compare/1.2.0...1.3.0)
+## [1.3.1 - 2022-01-02](https://github.com/p-seven-v/mrk/compare/1.3.0...1.3.1)
+
 ### Changed
+
+- Minor background improvements, no change to functionality
+
+## [1.3.0 - 2021-06-04](https://github.com/p-seven-v/mrk/compare/1.2.0...1.3.0)
+
+### Changed
+
 - Dropped PHP 7.3 support
 
 ## [1.2.0 - 2021-03-21](https://github.com/p-seven-v/mrk/compare/1.1.0...1.2.0)
+
 ### Changed
+
 - Dropped PHP 7.2 support
 
 ## [1.1.0 - 2021-03-06](https://github.com/p-seven-v/mrk/compare/1.0.0...1.1.0)
+
 ### Changed
+
 - Allowed PHP 8
 - Stopped supporting PHP 7.1
 
 ## [1.0.0 - 2020-11-30](https://github.com/p-seven-v/mrk/compare/0.2.0...1.0.0)
+
 ### Added
+
 - Implemented Json parser for metadata
 
 ## [0.2.0 - 2020-01-07](https://github.com/p-seven-v/mrk/compare/0.1.1...0.2.0)
+
 ### Added
+
 - Implemented Commonmark parser for content
 - Implemented plain text parser for content
 - Implemented Yaml parser for metadata
 
 ## [0.1.1 - 2019-09-17](https://github.com/p-seven-v/mrk/compare/0.1.0...0.1.1)
+
 ### Changed
+
 - Chore modifications
 
 ## 0.1.0 - 2019-09-17
+
 ### Added
+
 - Implemented Parsedown parser for content
 - Implemented Ini parser for metadata
